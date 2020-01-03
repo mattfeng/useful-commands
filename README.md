@@ -1,5 +1,11 @@
 # Useful commands and related programming things
 
+## AWS S3
+
+### Mount S3 bucket as FUSE file system
+* `s3fs <bucketname> -o use_cache=/tmp -o allow_other -o uid=1001 -o mp_umask=002 -o multireq_max=5 <mount_folder>`
+* Will need to edit `/etc/fuse.conf` to allow others.
+
 ## AWS Lambda Functions
 
 ### Files
