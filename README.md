@@ -2,6 +2,15 @@
 
 ## AWS S3
 
+### Setup S3 FUSE
+* `sudo apt-get update`
+* `sudo apt-get install automake autotools-dev fuse g++ git libcurl4-gnutls-dev libfuse-dev libssl-dev libxml2-dev make pkg-config`
+* `git clone https://github.com/s3fs-fuse/s3fs-fuse.git`
+* `cd s3fs-fuse && ./autogen.sh && ./configure --prefix=/usr --with-openssl && make && sudo make install`
+* `touch /etc/passwd-s3fs`
+* `vim /etc/passwd-s3fs`
+* `ACCESS_KEY:SECRET_KEY`
+
 ### Mount S3 bucket as FUSE file system
 * `s3fs <bucketname> -o use_cache=/tmp -o allow_other -o uid=1001 -o mp_umask=002 -o multireq_max=5 <mount_folder>`
 * Will need to edit `/etc/fuse.conf` to allow others.
