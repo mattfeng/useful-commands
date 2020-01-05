@@ -39,5 +39,20 @@
 * Note: `<recipient>` must be in your public keyring.
 
 
+## Docker
+
+### Start and run a container interactively
+* `docker run -it <image> /bin/bash` (if no `ENTRYPOINT` defined)
+* `docker run -it --entrypoint /bin/bash <image>` (if `ENTRYPOINT` defined)
+
+
+## Ubuntu
+
+### Find which version of a package will be installed
+* `apt-cache policy <package>`
+
+### Install a specific version of a package
+* `apt-get install <package>=<version>`
+
 ## Useful Tools
 * **forever**. Turn scripts into daemons on Linux.
