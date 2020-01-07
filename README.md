@@ -15,6 +15,9 @@
 * `s3fs <bucketname> -o use_cache=/tmp -o allow_other -o uid=1001 -o mp_umask=002 -o multireq_max=5 <mount_folder>`
 * Will need to edit `/etc/fuse.conf` to allow others.
 
+### Copy Directory to S3 using AWS CLI
+* `aws s3 sync <local folder> s3://<bucket>`
+
 ## AWS Lambda Functions
 
 ### Files
@@ -53,6 +56,11 @@
 
 ### Install a specific version of a package
 * `apt-get install <package>=<version>`
+
+## tmux
+
+### Rotating panes
+* `<C-b> <C-o>`
 
 ## Useful Tools
 * **forever**. Turn scripts into daemons on Linux.
