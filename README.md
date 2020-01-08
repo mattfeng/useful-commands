@@ -48,6 +48,8 @@
 * `docker run -it <image> /bin/bash` (if no `ENTRYPOINT` defined)
 * `docker run -it --entrypoint /bin/bash <image>` (if `ENTRYPOINT` defined)
 
+### Delete all stopped containers
+* `docker rm $(docker ps -a -q)`
 
 ## Ubuntu
 
