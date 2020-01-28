@@ -44,6 +44,10 @@
 
 ## Docker
 
+### Docker couldn't connect to ...
+* `sudo usermod -a -G docker $USER`
+* `newgrp docker` (make changes take effect immediately)
+
 ### Start and run a container interactively
 * `docker run -it <image> /bin/bash` (if no `ENTRYPOINT` defined)
 * `docker run -it --entrypoint /bin/bash <image>` (if `ENTRYPOINT` defined)
@@ -66,3 +70,8 @@
 
 ## Useful Tools
 * **forever**. Turn scripts into daemons on Linux.
+
+##
+
+
+
