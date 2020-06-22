@@ -71,7 +71,8 @@
 ## Useful Tools
 * **forever**. Turn scripts into daemons on Linux.
 
-##
+## SSH
+* `<Enter>~C`. Open SSH configuration on already open connection.
 
 
 
